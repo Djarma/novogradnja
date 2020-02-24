@@ -1,0 +1,26 @@
+html {
+    font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+    background-color: gray;
+    font-size: 1.8rem;
+    font-family: $font-montserrat;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 3rem;
+    margin: 0 auto;
+}
