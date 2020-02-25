@@ -5,7 +5,7 @@ html {
 body {
     background-color: gray;
     font-size: 1.8rem;
-    font-family: $font-montserrat;
+    font-family: $font-montserrat !important;
 }
 
 ul {
@@ -21,6 +21,6 @@ li {
 .container {
     max-width: 1440px;
     width: 100%;
-    padding: 0 3rem;
     margin: 0 auto;
+    position: relative;
 }

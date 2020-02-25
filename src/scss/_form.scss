@@ -1,0 +1,42 @@
+.explore__content--form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11.65rem;
+}
+
+.form-control {
+    height: 5.6rem;
+    border: none;
+    border-radius: 3.51px;
+    background-color: #fff;
+    font-size: 1.62rem;
+
+    &::placeholder {
+        color: #6B696C !important;
+    }
+}
+
+.form-group {
+    position: relative;
+
+    select {
+        margin-right: 7.96px;
+        width: 21.7rem;
+        color: #6B696C;
+        padding-left: 12.87px;
+    }
+}
+
+input.form-control {
+    width: 43.6rem;
+    padding: 1.8rem;
+    position: relative;
+    margin-right: 6.85px;
+
+    & + span {
+        position: absolute;
+        right: 2.34rem;
+        bottom: 1.521rem;
+    }
+}
