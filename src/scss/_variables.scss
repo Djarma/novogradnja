@@ -1,0 +1,46 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:300,400,700&display=swap&subset=latin-ext');
+
+$montserrat: 'Montserrat';
+$opensans: 'Open Sans';
+
+
+// color
+
+$white: #fff;
+$dark-gray: #474648;
+$medium-gray: #414042;
+$light-gray: #6D7893;
+$gray: #6B696C;
+$blue: #24345C;
+$dark-blue: #182545;
+$green: #50E3C2;
+$green-medium: #50E3B3;
+$green-light: #C2F5E5;
+$orange: #FFB74A;
+$orange-light: #FFCD81;
+
+
+.green {
+    color: $green;
+}
+
+.green-bg {
+    background-color: $green;
+}
+
+.orange {
+    color: $orange;
+}
+
+.orange-bg {
+    background-color: $orange;
+}
+
+.orangelight {
+    color: $orange-light;
+}
+
+.orangelight-bg {
+    background-color: $orange-light;
+}

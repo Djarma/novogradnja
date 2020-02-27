@@ -3,9 +3,24 @@ html {
 }
 
 body {
-    background-color: gray;
     font-size: 1.8rem;
-    font-family: $font-montserrat !important;
+    font-family: $montserrat !important;
+    background-color: #F2F2F2;
+    
+    @media only screen and (max-width: 678px) {
+        font-size: 1.4rem;
+    } 
+}
+
+a {
+    text-transform: none;
+    text-decoration: none;
+    color: $white;
+    transition: .4s ease;
+
+    &:hover {
+        color: $light-gray;
+    }
 }
 
 ul {

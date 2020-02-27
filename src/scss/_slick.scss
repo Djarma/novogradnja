@@ -6,9 +6,17 @@
     bottom: 14.9rem;
     z-index: 100;
 
+    @media only screen and (max-width: 480px) {
+        bottom: 13.3rem;
+    }
+
     li {
         &:not(:last-of-type) {
             margin-right: 2rem;
+
+            @media only screen and (max-width: 480px) {
+                margin-right: 1.2rem;
+            }
         }
 
         &.slick-active button {
@@ -23,6 +31,17 @@
             padding: 0;
             display: block;
             font-size: 0;
+
+            @media only screen and (max-width: 480px) {
+                width: 6px;
+                height: 6px;
+            }
         }
+    }
+}
+
+@media only screen and (max-width: 678px) {
+    .slick-arrow {
+        display: none !important;
     }
 }

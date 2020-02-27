@@ -1,15 +1,13 @@
 @import "reset";
-@import "fonts";
+@import "variables";
 @import "base";
-@import "typography";
 @import "buttons";
 @import "form";
 @import "navigation";
-@import "explore";
-@import "about";
-@import "advertise";
+@import "homepage";
 @import "footer";
-@import "slick";
+@import "pricing";
 
 // slick
+@import "slick";
 @import "../../node_modules/slick-carousel/slick/slick";

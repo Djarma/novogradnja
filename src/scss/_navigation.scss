@@ -2,13 +2,26 @@
     display: flex;
     position: absolute;
     top: 0;
-    left: 3rem;
-    right: 3rem;
-    z-index: 100;
+    left: 0;
+    right: 0;
+    padding: 0 3rem;
+    z-index: 260;
     align-items: center;
     margin-top: 3.2rem;
 
+    @media only screen and (max-width: 1070px) {
+        justify-content: space-between;
+        margin-top: 0;
+        padding-left: 13px;
+        background-color: $blue;
+        padding-top: 7.63px;
+        padding-bottom: 7.51px;
+        position: static;
+    }
+
     &__logo {
+        position: relative;
+        z-index: 200;
 
         &--item {
 
@@ -20,6 +33,61 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media only screen and (max-width: 1070px) {
+            display: none;
+        }
+
+        &__mobile {
+
+            @media only screen and (min-width: 1071px) {
+                display: none;
+            }
+
+
+            &__btn {
+                &--item {
+                    display: block;
+                    width: 2.3rem;
+                    height: 2px;
+                    background-color: $white;
+
+                    &:nth-child(2) {
+                        margin-top: 5px;
+                    }
+
+                    &:nth-child(3) {
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            &__navbar {
+                height: 25rem;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 6rem;
+                right: 0;
+                z-index: 100;
+                background-color: $blue;
+                padding: 3rem;
+                transform: translateY(-40rem);
+
+                @media only screen and (max-width: 1070px) {
+                    display: block;
+                }
+
+                &__list {
+                    display: flex;
+                    flex-direction: column !important;
+
+                    li {
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
 
         &__list {
             margin-left: 4.2rem;
@@ -33,26 +101,78 @@
             li:nth-of-type(2) {
                 margin-right: 4.8rem;
             }
-
-            &--item {
-
-            }
         }
 
         &--btn {
-            border-color: #50E3B3;
+            border-color: $green-medium;
         }
 
         &__user {
             display: flex;
+            align-items: center;
 
             &--login {
                 margin-right: 4.2rem;
+
+                span {
+                    
+                }
             }
 
             &__lang {
                 display: flex;
+
+                span {
+                    margin-left: 5px;
+                }
             }
         }
+    }
+}
+
+.pricing {
+
+    &__nav {
+        margin-top: 0;
+        height: 7rem;
+        left: 0;
+        right: 0;
+        padding-left: 1.5rem;
+        padding-right: 2.5rem;
+
+        &__menu {
+
+            &__list {
+
+                li:nth-of-type(2) {
+                    margin-right: 3.15rem;
+                }
+            }
+
+            &__user {
+
+                &--login {
+                    display: none;
+                }
+
+                &__logedin {
+                    display: flex;
+                    align-items: center;
+
+                    &--heart {
+                        margin-right: 3rem;
+
+                        img {
+                            margin-right: 9px;
+                        }
+                    }
+
+                    &--user {
+                        margin-right: 3.6rem;
+                    }
+                }
+            }
+        }
+
     }
 }

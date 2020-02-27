@@ -17,6 +17,11 @@ module.exports = {
         filename: 'bundle.js',
         // publicPath: '/dist'
     },
+    resolve: {
+        alias: {
+        "gsap": path.resolve('node_modules', 'gsap/all.js')
+        }
+    },
     module: {
         rules: [
             {
@@ -95,6 +100,10 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: 'src/index.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: 'src/pricing.html',
+            filename: 'pricing.html'
         })
     ]
 };
